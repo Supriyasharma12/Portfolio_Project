@@ -17,40 +17,88 @@ body {
   line-height: 1.6;
 }
 
-/* Container Utility */
-.container {
-  width: 90%;
+/* nav bar */
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  padding: 1rem 2rem;
+  top: 0;
+  z-index: 999;
+  position: sticky;
+  width: 100%;
   max-width: 1200px;
   margin: auto;
 }
 
-/* Navbar Styles */
-nav {
-  background-color: #ffffff;
-  padding: 1rem 0;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
-  position: sticky;
-  top: 0;
-  z-index: 1000;
+.image-logo{
+  height: 40px;
+  object-fit: contain;
 }
 
-nav ul {
-  display: flex;
-  justify-content: center;
+/* Nav Links - Desktop View */
+.nav-content {
   list-style: none;
+  display: flex;
   gap: 2rem;
+  margin: 0;
+  padding: 0;
 }
 
-nav a {
+.nav-content li a{
   text-decoration: none;
   color: #333;
   font-weight: 600;
-  transition: color 0.3s ease;
+  font-size: 1rem;
+  position: relative;
+  transition: colour 0.3 ease;     
 }
 
-nav a:hover {
+.nav-content li a::after{
+  content: "";
+  position: absolute;
+  color: #0077ff;
+  width: 0%;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: #0077ff;
+  transition: width 0.3s ease;
+}
+
+.nav-content li a:hover::after {
+  width: 100%;
+}
+
+.nav-content li a:hover {
   color: #0077ff;
 }
+
+/* Hamburger Icon - Hidden on Desktop */
+.vertical-menu-toggle{
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.vertical-menu-toggle span{
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  border-radius: 3px;
+  transition: background-color 0.3s ease;
+}
+
+.vertical-menu-toggle:hover span {
+  background-color: #0077ff;
+}
+
+
+
+
 
 /* Hero Section */
 .hero {
@@ -190,6 +238,35 @@ footer a:hover {
 
 /* Responsive */
 @media screen and (max-width: 768px) {
+  /* nav bar responsiveness */
+  .vertical-menu-toggle{
+    display: flex;           /* show the hamburder menu */
+  }
+  .nav-content {
+    display: none;            /*  hide the horizal menu*/
+    position: absolute;       /* place it over the content*/
+    top: 70px;
+    right: 2rem;
+    background-color: #ffffff;
+    flex-direction: column;
+    width: 200px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    padding: 1rem;
+    border-radius: 6px;
+    z-index: 1000;         /*  it should be above all content*/
+  }
+
+  .nav-content.active {
+    display: flex;       /* active class is added by js after adding it shoe hidden dropdown */ 
+  }
+
+  .nav-content li {
+    margin: 0.5rem 0;
+  }
+ 
+
+
+
   .projects {
     flex-direction: column;
     align-items: center;
