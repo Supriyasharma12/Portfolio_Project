@@ -10,133 +10,273 @@
 
 <body>
     <!-- nav bar -->
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html"></a>About</li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="contact.html">Contact</a></li>
+    <nav class="nav-container">
+        <div class="image-logo">
+            <img src="" alt="img-logo">
+        </div>
+        <!-- hamburger menu for small size screen -->
+        <div class="vertical-menu-toggle" id="vertical-menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span> <!--   three lines for menu  -->
+        </div>
+        <!-- horizontal menu -->
+        <ul class="nav-content" id="nav-content">
+            <li><a href="index.html"></a>Home</li>
+            <li><a href="about.html"></a>About </li>
+            <li><a href="projects.html"></a>Projects</li>
+            <li><a href="contact.html"></a>Contact</li>
         </ul>
     </nav>
 
 
-    <section class="Project-section" id="projects">
+    <section class="Project-section-page" id="projects">
         <div class="headline">
             <h1>My Projects</h1>
             <p class="project-subtitle">A curated collection of the projects I’ve worked on — ranging from frontend
                 builds to full-stack applications.</p>
         </div>
-        <div class="project-container">
+        <div class="project-container-page">
             <!-- Project 1 -->
-            <div class="project-card">
+            <div class="project-card-page">
                 <div class="project-detail">
-                    <img src="" alt="project1-thumbnail">
-                    <h2 class="project-name">Virtual Pet Stimulator</h2>
-                    <p class="project-description">Interactive web app where users feed, play, and care for a virtual
-                        pet. Built using HTML, CSS, and JS DOM manipulation.</p>
-                    <ul>
-                        <li>Technologies: Leaflet.js, HTML, CSS, Chart.js</li>
-                        <li>Focus: Data Visualization, Environmental Insights, UX</li>
+                    <img src="images/virtualpet-preview.gif" alt="Virtual Pet Simulator preview" />
+                    <h2 class="project-name">Virtual Pet Simulator <span class="status completed">✔ Completed</span>
+                    </h2>
+
+                    <p class="project-description">
+                        Interactive app where users feed, play, and care for a virtual pet. Uses DOM manipulation and
+                        condition-based rendering.
+                    </p>
+
+                    <div class="project-tags">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">DOM</span>
+                    </div>
+
+                    <ul class="project-impact">
+                        <li>Learned modular JS functions & DOM interactions</li>
+                        <li>Designed pet mood animations for better UX</li>
                     </ul>
+
+                    <details>
+                        <summary>What I Learned</summary>
+                        <p>This project enhanced my understanding of DOM manipulation, event listeners, and real-time UI
+                            updates.</p>
+                    </details>
                 </div>
+
                 <div class="project-links">
-                    <a href="https://github.com/Supriyasharma12/Virtual_Pet_Simulator" target="_blank" class="btn">🔗
-                        GitHub</a>
-                    <a href="https://supriyasharma12.github.io/Virtual_Pet_Simulator" target="_blank" class="btn">🚀
-                        Live Demo</a>
+                    <a href="https://github.com/Supriyasharma12/Virtual_Pet_Simulator" target="_blank" class="btn">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                    <a href="https://supriyasharma12.github.io/Virtual_Pet_Simulator" target="_blank" class="btn">
+                        <i class="fas fa-external-link-alt"></i> Live Demo
+                    </a>
                 </div>
+
             </div>
+
             <!-- Project 2 -->
-            <div class="project-card">
+            <div class="project-card-page">
                 <div class="project-detail">
+                    <img src="images/interactivemap.png" alt="Interactive Map preview" />
+                    <h2 class="project-name">Climate Map Dashboard <span class="status ongoing">🔄 In
+                            Progress</span></h2>
+
+                    <p class="project-description">
+                        A Leaflet-based map showing CO₂ emissions and climate data across the globe. Integrated
+                        with
+                        Chart.js for data trends.
+                    </p>
+
+                    <div class="project-tags">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">Leaflet.js</span>
+                        <span class="tag">Chart.js</span>
+                    </div>
+
+                    <ul class="project-impact">
+                        <li>Visualizes climate indicators for 100+ countries</li>
+                        <li>Enables intuitive insights via hover filters</li>
+                    </ul>
+
+                    <details>
+                        <summary>What I Learned</summary>
+                        <p>I improved my skills in geospatial data rendering, interactive tooltips, and
+                            responsive
+                            chart integration.</p>
+                    </details>
+                </div>
+
+                <div class="project-links">
+                    <a href="https://github.com/Supriyasharma12/Interactive_Map" target="_blank" class="btn">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                    <a href="https://supriyasharma12.github.io/Interactive_Map" target="_blank" class="btn">
+                        <i class="fas fa-external-link-alt"></i> Live Demo
+                    </a>
+                </div>
+            </div>
+
+            <!-- <div class="project-detail">
                     <img src="" alt="project1-thumbnail">
-                    <h2 class="project-name">Interactive Map</h2>
-                    <p class="project-description">Built an interactive global map showcasing CO₂ emissions and climate
-                        indicators using geospatial and data visualization tools.</p>
+                    <h2 class="project-name">Virtual Pet Stimulator</h2>
+                    <p class="project-description">Interactive web app where users feed, play, and care for a virtual
+                        pet. Built using HTML, CSS, and JS DOM manipulation.</p>
                     <ul>
-                        <li>Technologies: Leaflet.js, HTML, CSS, Chart.js</li>
-                        <li>Focus: Data Visualization, Environmental Insights, UX</li>
+                        <li><strong>Technologies:</strong> Leaflet.js, HTML, CSS, Chart.js</li>
+                        <li><strong>Focus:</strong> Data Visualization, Environmental Insights, UX</li>
                     </ul>
                 </div>
                 <div class="project-links">
-                    <a href="https://github.com/Supriyasharma12/Virtual_Pet_Simulator" target="_blank" class="btn">🔗
+                    <a href="https://github.com/Supriyasharma12/Virtual_Pet_Simulator" target="_blank" class="btn">
                         GitHub</a>
-                    <a href="https://supriyasharma12.github.io/Virtual_Pet_Simulator" target="_blank" class="btn">🚀
+                    <a href="https://supriyasharma12.github.io/Virtual_Pet_Simulator" target="_blank" class="btn">
                         Live Demo</a>
-                </div>
-            </div>
+                </div> -->
             <!-- Project 3 -->
-            <div class="project-card">
+            <div class="project-card-page">
                 <div class="project-detail">
-                    <img src="" alt="project1-thumbnail">
-                    <h2 class="project-name">Virtual Pet Stimulator</h2>
-                    <p class="project-description">Interactive web app where users feed, play, and care for a virtual
-                        pet. Built using HTML, CSS, and JS DOM manipulation.</p>
-                    <ul>
-                        <li>Technologies: Leaflet.js, HTML, CSS, Chart.js</li>
-                        <li>Focus: Data Visualization, Environmental Insights, UX</li>
+                    <img src="images/interactivemap.png" alt="Interactive Map preview" />
+                    <h2 class="project-name">Climate Map Dashboard <span class="status ongoing">🔄 In
+                            Progress</span></h2>
+
+                    <p class="project-description">
+                        A Leaflet-based map showing CO₂ emissions and climate data across the globe.
+                        Integrated
+                        with Chart.js for data trends.
+                    </p>
+
+                    <div class="project-tags">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">Leaflet.js</span>
+                        <span class="tag">Chart.js</span>
+                    </div>
+
+                    <ul class="project-impact">
+                        <li>Visualizes climate indicators for 100+ countries</li>
+                        <li>Enables intuitive insights via hover filters</li>
                     </ul>
+
+                    <details>
+                        <summary>What I Learned</summary>
+                        <p>I improved my skills in geospatial data rendering, interactive tooltips, and
+                            responsive chart integration.</p>
+                    </details>
                 </div>
+
                 <div class="project-links">
-                    <a href="https://github.com/Supriyasharma12/Virtual_Pet_Simulator" target="_blank" class="btn">🔗
-                        GitHub</a>
-                    <a href="https://supriyasharma12.github.io/Virtual_Pet_Simulator" target="_blank" class="btn">🚀
-                        Live Demo</a>
+                    <a href="https://github.com/Supriyasharma12/Interactive_Map" target="_blank" class="btn">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                    <a href="https://supriyasharma12.github.io/Interactive_Map" target="_blank" class="btn">
+                        <i class="fas fa-external-link-alt"></i> Live Demo
+                    </a>
                 </div>
             </div>
+
             <!-- Project 4 -->
-            <div class="project-card">
+            <div class="project-card-page">
                 <div class="project-detail">
-                    <img src="" alt="project1-thumbnail">
-                    <h2 class="project-name">Virtual Pet Stimulator</h2>
-                    <p class="project-description">Interactive web app where users feed, play, and care for a virtual
-                        pet. Built using HTML, CSS, and JS DOM manipulation.</p>
-                    <ul>
-                        <li>Technologies: Leaflet.js, HTML, CSS, Chart.js</li>
-                        <li>Focus: Data Visualization, Environmental Insights, UX</li>
+                    <img src="images/interactivemap.png" alt="Interactive Map preview" />
+                    <h2 class="project-name">Climate Map Dashboard <span class="status ongoing">🔄 In
+                            Progress</span></h2>
+
+                    <p class="project-description">
+                        A Leaflet-based map showing CO₂ emissions and climate data across the globe.
+                        Integrated with Chart.js for data trends.
+                    </p>
+
+                    <div class="project-tags">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">Leaflet.js</span>
+                        <span class="tag">Chart.js</span>
+                    </div>
+
+                    <ul class="project-impact">
+                        <li>Visualizes climate indicators for 100+ countries</li>
+                        <li>Enables intuitive insights via hover filters</li>
                     </ul>
+
+                    <details>
+                        <summary>What I Learned</summary>
+                        <p>I improved my skills in geospatial data rendering, interactive tooltips, and
+                            responsive chart integration.</p>
+                    </details>
                 </div>
+
                 <div class="project-links">
-                    <a href="https://github.com/Supriyasharma12/Virtual_Pet_Simulator" target="_blank" class="btn">🔗
-                        GitHub</a>
-                    <a href="https://supriyasharma12.github.io/Virtual_Pet_Simulator" target="_blank" class="btn">🚀
-                        Live Demo</a>
+                    <a href="https://github.com/Supriyasharma12/Interactive_Map" target="_blank" class="btn">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                    <a href="https://supriyasharma12.github.io/Interactive_Map" target="_blank" class="btn">
+                        <i class="fas fa-external-link-alt"></i> Live Demo
+                    </a>
                 </div>
             </div>
+
+
             <!-- Project 5 -->
-            <div class="project-card">
+            <div class="project-card-page">
                 <div class="project-detail">
-                    <img src="" alt="project1-thumbnail">
-                    <h2 class="project-name">Virtual Pet Stimulator</h2>
-                    <p class="project-description">Interactive web app where users feed, play, and care for a virtual
-                        pet. Built using HTML, CSS, and JS DOM manipulation.</p>
-                    <ul>
-                        <li>Technologies: Leaflet.js, HTML, CSS, Chart.js</li>
-                        <li>Focus: Data Visualization, Environmental Insights, UX</li>
+                    <img src="images/interactivemap.png" alt="Interactive Map preview" />
+                    <h2 class="project-name">Climate Map Dashboard <span class="status ongoing">🔄
+                            In
+                            Progress</span></h2>
+
+                    <p class="project-description">
+                        A Leaflet-based map showing CO₂ emissions and climate data across the globe.
+                        Integrated with Chart.js for data trends.
+                    </p>
+
+                    <div class="project-tags">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">Leaflet.js</span>
+                        <span class="tag">Chart.js</span>
+                    </div>
+
+                    <ul class="project-impact">
+                        <li>Visualizes climate indicators for 100+ countries</li>
+                        <li>Enables intuitive insights via hover filters</li>
                     </ul>
+
+                    <details>
+                        <summary>What I Learned</summary>
+                        <p>I improved my skills in geospatial data rendering, interactive tooltips,
+                            and
+                            responsive chart integration.</p>
+                    </details>
                 </div>
+
                 <div class="project-links">
-                    <a href="https://github.com/Supriyasharma12/Virtual_Pet_Simulator" target="_blank" class="btn">🔗
-                        GitHub</a>
-                    <a href="https://supriyasharma12.github.io/Virtual_Pet_Simulator" target="_blank" class="btn">🚀
-                        Live Demo</a>
+                    <a href="https://github.com/Supriyasharma12/Interactive_Map" target="_blank" class="btn">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                    <a href="https://supriyasharma12.github.io/Interactive_Map" target="_blank" class="btn">
+                        <i class="fas fa-external-link-alt"></i> Live Demo
+                    </a>
                 </div>
             </div>
         </div>
     </section>
-
 
     <div class="footer">
         <!-- footer -->
         <footer>
             <p>&copy; 2025 Supriya Sharma | All rights reserved</p>
             <p>
-                <a href="supriyasharma23456@gmail.com">your.email@example.com</a> |
+                <a href="supriyasharma23456@gmail.com">supriyasharma23456@gmail.com</a> |
                 <a href="https://github.com/Supriyasharma12" target="_blank">GitHub</a> |
                 <a href="https://www.linkedin.com/in/_LINKEDIN">LinkedIn</a>
             </p>
         </footer>
-
     </div>
     <script src="script.js"></script>
 </body>
