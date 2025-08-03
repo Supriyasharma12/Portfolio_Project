@@ -1,18 +1,18 @@
 // nav bar
 
-document.addEventListener = ("DOMContentLoaded", function () {
-    const togglebtn = document.getElementById("vertical-menu-toggle");
-    const navcontentbtn = document.getElementById("nav-content");
+// document.addEventListener = ("DOMContentLoaded", function () {
+//     const togglebtn = document.getElementById("vertical-menu-toggle");
+//     const navcontentbtn = document.getElementById("nav-content");
 
-    togglebtn.addEventListener("click", function () {
-        navcontentbtn.classList.toggle("active");
-    });
-    const navlinks = navcontentbtn.querySelectorAll("a");
-    navlinks.forEach(link => {
-        link.addEventListener("click", function () {
-            navcontentbtn.classList.remove("active");
-        });
-    });
+//     togglebtn.addEventListener("click", function () {
+//         navcontentbtn.classList.toggle("active");
+//     });
+//     const navlinks = navcontentbtn.querySelectorAll("a");
+//     navlinks.forEach(link => {
+//         link.addEventListener("click", function () {
+//             navcontentbtn.classList.remove("active");
+//         });
+//     });
     //     if (togglebtn && navcontentbtn) {
     //     togglebtn.addEventListener("click", function () {
     //       console.log("Hamburger clicked");
@@ -21,8 +21,20 @@ document.addEventListener = ("DOMContentLoaded", function () {
     //   } else {
     //     console.log("Elements not found");
     //   }
-});
+// });
 
+const menuToggle = document.getElementById('vertical-menu-toggle');
+    const navContent = document.getElementById('nav-content');
+
+    menuToggle.addEventListener('click', () => {
+        navContent.classList.toggle('active');
+    });
+    const navlinks = navContent.querySelectorAll("a");
+    navlinks.forEach(link => {
+        link.addEventListener("click", function () {
+            navContent.classList.remove("active");
+        });
+    });
 // contact form validation
 const contactform = document.getElementById("form");
 if (contactform) {
