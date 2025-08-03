@@ -336,6 +336,9 @@ section {
   align-items: center;
   gap: 1rem;
   margin-top: -50px;
+  background-color: #ededed;
+  padding: 10px 10px 15px 15px;
+  border-radius: 20px;
 }
 
 /* Footer */
@@ -495,18 +498,36 @@ section {
 }
 
 /* About Image */
+.about-headline{
+    margin-bottom: 30px;
+}
+.about-headline h1 {
+  font-size: 2.5rem;
+}
+
+.about-headline p {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 2rem;
+}
+
 .about-container-page{
   padding-top: 10px;
+  max-width: 800px;
 }
 .about-me{
   display: flex;
   flex-direction: row;
+  max-width: 700px;
 }
 .my-description{
   text-align: center;
   padding-left: 30px;
   padding-right: 10px;
   margin-top: -70px;
+}
+.description-text{
+  max-width: 450px;
 }
 .my-name{
   padding: 10px;
@@ -555,6 +576,7 @@ section {
   background-color: #f0f4f8;
   padding: 1rem 1.5rem;
   border-left: 4px solid #007bff;
+   border-right: 4px solid #007bff;
   margin: 1.5rem 0;
   border-radius: 8px;
 }
@@ -586,21 +608,7 @@ section {
   background-color: #0056b3;
 }
 
-/* Career Goal Section */
-.career-goals {
-  margin-top: 2rem;
-}
 
-.career-goals h2 {
-  font-size: 1.5rem;
-  margin-bottom: 0.5rem;
-}
-
-.career-goals p {
-  font-size: 1rem;
-  color: #444;
-  line-height: 1.5;
-}
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
@@ -648,11 +656,18 @@ section {
   background-color: #019875;
 } */
 
+/* Career Goal Section */
+
+.career-goals p {
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.5;
+}
 .career-goals {
   background-color: #f1f1f1;
   padding: 20px;
   margin-top: 30px;
-  border-left: 4px solid #00b894;
+  /* border-left: 4px solid #00b894; */
   border-radius: 8px;
 }
 
